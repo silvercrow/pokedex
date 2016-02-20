@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="well well-sm">
+            <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                    <center>
+                      <img style="margin-top:20%;"ng-src="http://silvercrow.org/pokemon/dream-world/{{infoCtrl.pokemon.id}}.svg" alt="" class="img-rounded img-responsive" />
+                    </center>
+                  </div>
+                    <div class="col-sm-6 col-md-8">
+                      <h1><img ng-src="http://silvercrow.org/pokemon/trozei/{{infoCtrl.pokemon.id}}.gif"/> <span style="text-transform: uppercase;">{{infoCtrl.pokemon.name}}</span></h1>
+                      <div class="row">
+
+                        <div class="col-sm-6 col-md-6">
+                          <div class="well" style="max-height: 600px;overflow: auto;">
+                            <div class="table-responsive">
+                              <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Moves</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr ng-repeat="move in infoCtrl.pokemon.moves">
+                                    <td ng-bind="move.move.name"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="well" style="max-height: 600px;overflow: auto;">
+                            <div class="table-responsive">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Stats</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr ng-repeat="stat in infoCtrl.pokemon.stats">
+                                    <td>
+
+                                      <div class="progress">
+                                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{stat.base_stat}}" aria-valuemin="0" aria-valuemax="100" style="width: {{stat.base_stat}}%;">
+                                              <span class="sr-only">{{stat.base_stat}}% Complete</span>
+                                          </div>
+                                          <span class="progress-type" ng-bind="stat.stat.name"></span>
+                                          <span class="progress-completed">{{stat.base_stat}}%</span>
+                                      </div>
+
+                                    </td>
+
+
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
