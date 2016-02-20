@@ -2,9 +2,11 @@
 Simple pokedex using angular components pattern and pokeapi.co
 
 # Usage
+```shell
 $ git clone https://github.com/silvercrow/pokedex.git
 $ cd pokedex
 $ npm install
+```
 
 ## Scripts
 All scripts are run with `npm run [script]`, for example: `npm run test`.
