@@ -9,8 +9,6 @@ import uirouter from 'angular-ui-router';
 
 //App Routing
 import { routing, routingEventsLogger } from './app.config';
-//Common
-import common from './common/common.module';
 
 //Modules Importing
 import home from './home/home.module';
